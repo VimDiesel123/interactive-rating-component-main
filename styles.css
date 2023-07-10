@@ -87,13 +87,91 @@ h6 {
 
   --ff-primary: "Overpass", sans-serif;
   --fs-body: 15px;
+
+  --fw-bold: 700;
+  --fw-regular: 400;
 }
 
 body {
-  background-color: var(--clr-primary-900);
+  background-color: #141519;
   font-family: var(--ff-primary);
   font-size: 15px;
+  font-weight: var(--fw-regular);
   color: var(--clr-neutral-100);
+}
+
+main {
+  height: 100%;
+  display: grid;
+  padding-inline: 1.5rem;
+}
+
+.card {
+  place-self: center center;
+  background: linear-gradient(var(--clr-primary-700), var(--clr-primary-900));
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  gap: 1.25rem;
+  z-index: -10;
+}
+
+.card__icon {
+  position: relative;
+  align-self: flex-start;
+  padding: 0.75rem;
+  background-color: hsl(217, 21%, 22%);
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+}
+
+.card__text {
+  color: var(--clr-neutral-300);
+}
+
+.card__rating-options {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1rem;
+}
+
+.card__star-option {
+  display: none;
+}
+
+.card__star-label {
+  color: var(--clr-neutral-300);
+  position: relative;
+  line-height: 0;
+  margin-block: 1.75rem;
+}
+
+.card__star-label::before {
+  content: "";
+  padding: 1.3rem;
+  background-color: var(--clr-primary-700);
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  border: none;
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+  padding: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  border-radius: 3rem;
+  line-height: 1;
 }
 
 .hidden {
