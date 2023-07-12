@@ -16,12 +16,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles.css">
+
+
 </head>
 
 <body>
 
   <main>
-    <article class="card hidden">
+    <article class="card">
 
       <img src="./images/icon-star.svg" class="card__icon" alt="">
 
@@ -38,12 +40,12 @@
         <input type="radio" id="star-4" class="card__star-option">
         <label for="star-4" class="card__star-label">4</label>
         <input type="radio" id="star-5" class="card__star-option">
-        <label for="star-5" class="card__star-label">5</label>
+        <label for="star-5" class="card__star-label selected">5</label>
       </div>
       <button type="submit" class="button">Submit</button>
     </article>
 
-    <article class="card thank-you">
+    <article class="card thank-you hidden">
       <img src="./images/illustration-thank-you.svg" alt="" class="thank-you__illustration">
       <span class="thank-you__banner">You selected 4 out of 5</span>
       <h2 class="card__title">Thank you!</h2>
@@ -55,7 +57,7 @@
 
   </main>
 
-
+  <script src="./index.js"></script>
 </body>
 
 </html>
