@@ -18,3 +18,13 @@ starInputs.forEach((starInput) => {
     starInput.checked = !starInput.checked;
   });
 });
+
+const submitButton = document.querySelector(".button");
+
+submitButton.addEventListener("click", () => {
+  const ratingCard = document.querySelector(".card--rating");
+  ratingCard.classList.add("hidden");
+
+  const thankYouCard = document.querySelector(".thank-you");
+  thankYouCard.classList.remove("hidden");
+});
