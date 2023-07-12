@@ -106,12 +106,14 @@ main {
   padding-inline: 1.5rem;
 }
 
+/* Main rating card */
+
 .card {
   place-self: center center;
   background: linear-gradient(var(--clr-primary-700), var(--clr-primary-900));
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 1rem;
   gap: 1.25rem;
   z-index: -10;
@@ -172,6 +174,24 @@ main {
   letter-spacing: 0.25rem;
   border-radius: 3rem;
   line-height: 1;
+}
+
+/* Thank you card */
+
+.thank-you {
+  align-items: center;
+}
+
+.thank-you__banner {
+  color: var(--clr-primary-400);
+  background-color: var(--clr-primary-700);
+  padding: 0.75rem;
+  border-radius: 50px;
+  line-height: 1;
+}
+
+.thank-you__text {
+  text-align: center;
 }
 
 .hidden {

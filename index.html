@@ -21,7 +21,7 @@
 <body>
 
   <main>
-    <article class="card">
+    <article class="card hidden">
 
       <img src="./images/icon-star.svg" class="card__icon" alt="">
 
@@ -43,11 +43,12 @@
       <button type="submit" class="button">Submit</button>
     </article>
 
-    <article class="hidden">
-      <img src="./images/illustration-thank-you.svg" alt="">
-      <span>You selected <!-- Add rating here --> out of 5</span>
-      <h2>Thank you!</h2>
-      <p>We appreciate you taking the time to give a rating. If you ever need more support,
+    <article class="card thank-you">
+      <img src="./images/illustration-thank-you.svg" alt="" class="thank-you__illustration">
+      <span class="thank-you__banner">You selected 4 out of 5</span>
+      <h2 class="card__title">Thank you!</h2>
+      <p class="card__text thank-you__text">We appreciate you taking the time to give a rating. If you ever need more
+        support,
         don’t hesitate to get in touch!</p>
     </article>
 
