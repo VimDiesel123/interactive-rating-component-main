@@ -15,6 +15,10 @@ starInputs.forEach((starInput) => {
     selectedLabel.classList.add("selected");
     console.log(selectedLabel);
 
+    const thankYouBanner = document.querySelector(".thank-you__banner");
+    thankYouBanner.textContent = `You selected ${selectedLabel.textContent} out of 5`;
+    console.log(thankYouBanner.textContent);
+
     starInput.checked = !starInput.checked;
   });
 });
